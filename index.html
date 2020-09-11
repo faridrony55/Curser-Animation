@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curser Animation</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div id="curser"></div>
+	<div id="dot"></div>
+
+<section>
+	
+	<div class="box">
+		
+	</div>
+</section>
+
+
+<script>
+	var pointer = document.getElementById('curser');
+	var dot = document.getElementById('dot');
+	document.addEventListener('mousemove',function(e){
+		var x = e.clientX;
+		var y = e.clientY;
+
+		pointer.style.left = x+"px";
+		pointer.style.top = y+"px";
+		dot.style.left = x+"px";
+		dot.style.top = y+"px";
+	})
+</script>
+</body>
+</html>
